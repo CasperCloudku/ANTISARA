@@ -87,37 +87,16 @@ header nav:hover > a:not(:hover) {
     font-size: 40px;
 }
 
-/* Aturan Media Query untuk Responsif */
+/* Aturan Media Query untuk Responsif di Semua Perangkat */
 @media only screen and (max-width: 768px) {
-    header {
-        height: auto;
-        padding: 20px;
-    }
-
+    /* Menyesuaikan teks Cloudku di header */
     header h1 {
-        font-size: 24px;
+        font-size: 24px; /* Ubah ukuran teks Cloudku */
     }
 
-    header nav {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-
+    /* Menyesuaikan navigasi di header */
     header nav a {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-
-    .home .title {
-        font-size: 40px;
-    }
-
-    .about {
-        padding: 20px;
-    }
-
-    .about h1 {
-        font-size: 24px;
+        padding: 5px 10px; /* Ubah padding navigasi */
+        font-size: 14px; /* Ubah ukuran teks navigasi */
     }
 }
