@@ -5,6 +5,17 @@ const bush2 = document.querySelector('.bush2')
 const mount1 = document.querySelector('.mount1')
 const mount2 = document.querySelector('.mount2')
 
+function checkDevice() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        alert("Situs ini lebih baik dilihat di versi desktop. Silakan aktifkan situs dekstop untuk pengalaman terbaik.");
+    }
+}
+
+window.onload = function() {
+    checkDevice();
+};
+
+
 document.addEventListener('scroll', function() {
     let value = window.scrollY
     let time = new Date()
